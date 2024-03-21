@@ -13,3 +13,7 @@ print("vou imprimir isso em uma linha ", end=' ')
 print("continuarei na linha de cima") 
 #End para 'adicionar' a linha debaixo na linha de cima.
 
+n = 1
+x += n
+# x += n é o mesmo que x = x + n
+
