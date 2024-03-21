@@ -118,5 +118,30 @@ elif (sexo == 'masc'):
     print('O seu peso ideal é %.2f'% peso_ideal, 'kg')
 
 #Questão 9
+peso = float(input('Qual o seu peso? '))
+altura = float(input('Qual sua altura? '))
+massa_corporea = peso/(altura*2)
+if (massa_corporea < 26):
+    print('Peso normal')
+elif (massa_corporea >=26 and massa_corporea <30):
+    print('Obesidade')
+else:
+    print('Obesidade mórbida')
 
+#Questão 10
+renda_anual = float(input('Qual sua renda anual? '))
+dependentes = float(input('Quantos dependentes há em sua casa? '))
+descontos = dependentes * 110
+renda_liquida = renda_anual - descontos
+if (renda_liquida <= 800):
+    print('Alíquota isenta')
+elif (renda_liquida >=801 and renda_liquida <=4000):
+    aliquota = 2.5/100
+    print('O imposto será de R$', renda_liquida*aliquota)
+elif (renda_liquida >=4001 and renda_liquida <= 9000):
+    aliquota = 5/100
+    print('O imposto será de R$', renda_liquida*aliquota)
+else:
+    aliquota = 10/100
+    print('O imposto será de R$', renda_liquida*aliquota)
 
